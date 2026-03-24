@@ -17,8 +17,4 @@ It covers the complete RTL-to-GDSII flow through structured day-wise implementat
 -Docker <br>
 -Magic VLSI <br>
 
-# Day 1 → [View Work](README.md)
-# Day 2 → [View Work](README.md)
-# Day 3 → [View Work](README.md)
-git tag Day-1-complete <br>
-git push origin Day-1-complete
+
