@@ -148,8 +148,9 @@ Screenshot of poly rules
 ![Alt Text](poly.9_rulse_book.png)
 ![Alt Text](allpolynonres_in_uhrpoly_sec.png)
 ![Alt Text](poly.9_select_poluy.png)
-![Alt Text](drc_check.png)
+
 ![Alt Text](poly.9_layout.png)
 
 New commands inserted in sky130A.tech file to update drc
 ![Alt Text](polynonres_in_vi_sky130A.tech.png)
+![Alt Text](drc_check.png)
