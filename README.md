@@ -15,7 +15,10 @@ cd Desktop/work/tools/openlane_working_dir/openlane
 
 # Clone the repository with custom inverter design
 git clone https://github.com/nickson-jose/vsdstdcelldesign
+```
+![Alt Text](after_git_clone_and_copying_sky130A_to_vsdstdcell.png)
 
+```bash
 # Change into repository directory
 cd vsdstdcelldesign
 
@@ -29,5 +32,5 @@ ls
 magic -T sky130A.tech sky130_inv.mag &
 ```
 commands run
-![Alt Text](.png)
+![Alt Text](magic_drc_commd.png)
 
