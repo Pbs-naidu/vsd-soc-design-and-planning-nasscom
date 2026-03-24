@@ -16,3 +16,7 @@ It covers the complete RTL-to-GDSII flow through structured day-wise implementat
 -Sky130 PDK <br>
 -Docker <br>
 -Magic VLSI <br>
+
+# Day 1 → [View Work](../../tree/day1)
+# Day 2 → [View Work](../../tree/day2)
+# Day 3 → [View Work](../../tree/day3)
