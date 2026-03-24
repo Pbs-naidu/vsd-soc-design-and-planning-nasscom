@@ -3,7 +3,7 @@ It covers the complete RTL-to-GDSII flow through structured day-wise implementat
 
 🎯 Objectives:
 
-line 1 -Understand complete ASIC Design Flow
+ -Understand complete ASIC Design Flow <br>
 -Gain practical exposure to OpenLANE
 -Analyze synthesis, floorplanning, placement, and routing
 -Perform timing and design analysis
