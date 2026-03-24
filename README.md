@@ -91,17 +91,20 @@ Screenshots of ngspice run
  Rise:
  20% 
  
- ![Alt Text](20_and_80_percent_rise_cmd_coordinates.png)
-![Alt Text](20_percent_rise_waveform).
+ ![Alt Text](20_and_80_percent_rise_cmd_coordinates.png).
+![Alt Text](20_percent_rise_waveform.png).
+
 Rise Transition Time = 5.5193 - 5.1866 = 0.3327 ns
 
 Fall:
 80%
-  ![Alt Text](80_to_20_fall_cmd_cordinates.png)
-![Alt Text](20_percent_fall_waveform).
+  ![Alt Text](80_to_20_fall_cmd_cordinates.png).
+![Alt Text](20_percent_fall_waveform.png).
 
 Fall Transition Time = 5.70097 - 4.50096 = 1.20001 ns
 
 50%
- ![Alt Text](rise_and_fall_50_percent_rise_delay_cmd.png)
-![Alt Text](rise_and_fall_50_percent_rise_delay_waveform).
+ ![Alt Text](rise_and_fall_50_percent_rise_delay_cmd.png).
+![Alt Text](rise_and_fall_50_percent_rise_delay_waveform.png)
+
+Rise Cell=5.348 - 5.1 = 0.248 ns
