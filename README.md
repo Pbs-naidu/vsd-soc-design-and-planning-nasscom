@@ -1,4 +1,4 @@
-Section 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK (14/03/2024 - 15/03/2024)
+Section 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK 
 Theory
 Expand or Collapse
 Implementation
