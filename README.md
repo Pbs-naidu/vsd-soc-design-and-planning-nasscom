@@ -102,6 +102,4 @@ Commands to exit from current run
 # Exit from OpenLANE flow
 exit
 
-# Exit from OpenLANE flow docker sub-system
-exit
 ```
