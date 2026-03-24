@@ -81,4 +81,14 @@ plot y vs time a
 
 Screenshots of ngspice run
  ![Alt Text](ngspice.png)
- ![Alt Text](plot y_vs_time.png)
+ ![Alt Text](plot_y_vs_time.png)
+ 
+ Rise Transition Time=t80%​−t20%​
+ 20% of Output Voltage = 0.2×Vout​=0.66 V
+ 80% of Output Voltage = 0.8×Vout​=2.64 V
+ Rise Time=t(2.64V)−t(0.66V)
+
+ Rise:
+ 20% 
+  ![Alt Text](80_rise_perce_waveform.png)
+ 
