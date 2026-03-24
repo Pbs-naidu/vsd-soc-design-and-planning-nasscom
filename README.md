@@ -54,6 +54,7 @@ exit
 
 ![Alt Text](in_report_dff_ratio.png)
 
+
 Section 2 – Comparison of Efficient and Inefficient Floorplans & Overview of Standard Cell Libraries (16/03/2024 – 17/03/2024)
 Conceptual Understanding
 Study the characteristics that distinguish a well-optimized floorplan from a poorly structured one.
@@ -88,9 +89,75 @@ prep -design picorv32a
 # Now that the design is prepped and ready, we can run synthesis using following command
 run_synthesis
 ```
+
+
 ```bash
 # Now we can run floorplan
 run_floorplan
+```
+Screenshot of floorplan run
+![Alt Text](floorplan.png)
+
+2) Load generated floorplan def in magic tool and explore the floorplan.
+Commands to load floorplan def in magic in another terminal
+```bash
+# Change directory to path containing generated floorplan def
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-03_12-06/results/floorplan/
+```
+![Alt Text](magic_-t_cmd.png)
+```bash
+# Command to load the floorplan def in magic tool
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+```
+![Alt Text](floor_plan.png)
+
+Equidistant ports
+
+![](floorplan_select..png)
+
+Port layer 
+
+![](floorplan_select.png)
+
+![](floorplan_standard_cell.png)
+
+Before Port distance change
+
+![](pins_before_set_dist.png)
+
+After Setting Port distance 
+![](pins_after_set_dist.png)
+![](pins_after_set_dist_1.png)
+
+3) Run 'picorv32a' design congestion aware placement using OpenLANE flow and generate necessary outputs.
+Command to run placement
+```bash
+# Congestion aware placement by default
+run_placement
+```
+Placement run
+![](run_placement.png)
+
+4) Load generated placement def in magic tool and explore the placement.
+Commands to load placement def in magic in another terminal
+```bash
+# Change directory to path containing generated placement def
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-03_12-06/results/placement/
+```
+```bash
+# Command to load the placement def in magic tool
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
+```
+floorplan def in magic
+
+![](placement_structure.png)
+![](placement_structure_zoom.png)
+
+Commands to exit from current run
+```bash
+# Exit from OpenLANE flow
+exit
+
 ```
 
 
