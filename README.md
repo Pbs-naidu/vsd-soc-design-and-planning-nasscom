@@ -42,7 +42,7 @@ run_floorplan
 Screenshot of floorplan run
 ![Alt Text](floorplan.png)
 
-2)Load generated floorplan def in magic tool and explore the floorplan.
+2) Load generated floorplan def in magic tool and explore the floorplan.
 Commands to load floorplan def in magic in another terminal
 ```bash
 # Change directory to path containing generated floorplan def
@@ -51,4 +51,16 @@ cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/17-03
 # Command to load the floorplan def in magic tool
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
 ```
+![Alt Text](floor_plan.png)
+
+Equidistant ports
+
+![](floorplan_select..png)
+
+Port layer 
+
+![](floorplan_select.png)
+
+![](floorplan_standard_cell.png)
+
 
