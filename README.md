@@ -1,16 +1,22 @@
 
-Section 2 – Comparison of Efficient and Inefficient Floorplans & Overview of Standard Cell Libraries (16/03/2024 – 17/03/2024)
+Section 2 – Comparison of Efficient and Inefficient Floorplans & Overview of Standard Cell Libraries 
+
 Conceptual Understanding
+
 Study the characteristics that distinguish a well-optimized floorplan from a poorly structured one.
 Gain a basic understanding of standard cell libraries and their role in VLSI design.
 Practical Implementation
+
 Execute design steps using the OpenLANE flow and analyze the outputs at different stages.
+
 Section 2 – Assigned Tasks
-Perform the floorplanning stage for the picorv32a design using the OpenLANE flow and generate the corresponding output files.
-Extract the dimensions from the generated floorplan DEF file and compute the total die area in micrometers.
-Import the floorplan DEF file into the Magic layout tool and examine the overall floorplan structure.
-Execute congestion-aware placement for the picorv32a design using OpenLANE and obtain the resulting outputs.
-Load the placement DEF file into Magic and analyze the placement distribution and cell arrangement.
+
+1)Perform the floorplanning stage for the picorv32a design using the OpenLANE flow and generate the corresponding output files.
+2)Extract the dimensions from the generated floorplan DEF file and compute the total die area in micrometers.
+3)Import the floorplan DEF file into the Magic layout tool and examine the overall floorplan structure.
+4)Execute congestion-aware placement for the picorv32a design using OpenLANE and obtain the resulting outputs.
+5)Load the placement DEF file into Magic and analyze the placement distribution and cell arrangement.
+
 Running Floorplanning in OpenLANE
 
 Use the OpenLANE flow commands to initiate and complete the floorplanning stage for the design, ensuring all required outputs are successfully generated.
