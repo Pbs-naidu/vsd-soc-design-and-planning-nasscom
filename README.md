@@ -65,7 +65,7 @@ Measuring unit distance in layout grid
 
 edited spice file ready for ngspice simulation
 
-  ![Alt Text](allpolynonres_in_uhrpoly_sec.png)
+  
    ![Alt Text](vim_spice_command_update_3.png)
    
 5) Post-layout ngspice simulations.
@@ -141,4 +141,15 @@ Screenshots of commands run
 ![Alt Text](magic_XR_cmd.png)
 Screenshot of .magicrc file
  ![Alt Text](magic_crc_file.png).
-![Alt Text](rise_and_fall_50_percent_rise_delay_waveform.png)
+ Incorrectly implemented poly.9 simple rule correction
+
+Screenshot of poly rules
+
+![Alt Text](poly.9_rulse_book.png)
+![Alt Text](allpolynonres_in_uhrpoly_sec.png)
+![Alt Text](poly.9_select_poluy.png)
+![Alt Text](drc_check.png)
+![Alt Text](poly.9_layout.png)
+
+New commands inserted in sky130A.tech file to update drc
+![Alt Text](polynonres_in_vi_sky130A.tech.png)
