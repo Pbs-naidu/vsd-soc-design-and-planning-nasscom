@@ -90,5 +90,5 @@ Screenshots of ngspice run
 
  Rise:
  20% 
-  ![Alt Text](80_rise_perce_waveform.png)
- 
+  ![Alt Text](20_and_80_percent_rise_cmd_coordinates.png)
+   ![Alt Text](80_rise_perce_waveform.png)
