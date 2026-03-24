@@ -31,6 +31,54 @@ ls
 # Command to open custom inverter layout in magic
 magic -T sky130A.tech sky130_inv.mag &
 ```
-commands run
-![Alt Text](magic_drc_commd.png)
+2) Load the custom inverter layout in magic and explore.
+custom inverter layout in magic
+![Alt Text](layout.png)
+![Alt Text](polysilicon_layout_pmos.png)
+![Alt Text](double_s_click_gnd.png)
+![Alt Text](double_s_click_power.png)
 
+3) Spice extraction of inverter in magic.
+Commands for spice extraction of the custom inverter layout to be used in tkcon window of magic
+```bash
+# Check current directory
+pwd
+
+# Extraction command to extract to .ext format
+extract all
+
+# Before converting ext to spice this command enable the parasitic extraction also
+ext2spice cthresh 0 rthresh 0
+
+# Converting to ext to spice
+ext2spice
+```
+ tkcon window after running above commands
+ ![Alt Text](extract_all.png)
+![Alt Text](ext_to_spice_command.png)
+Screenshot of created spice file
+ ![Alt Text](inspice_file.png)
+
+4) Editing the spice model file for analysis through simulation.
+Measuring unit distance in layout grid
+  ![Alt Text](box_dimension.png)
+
+edited spice file ready for ngspice simulation
+
+  ![Alt Text](allpolynonres_in_uhrpoly_sec.png)
+   ![Alt Text](vim_spice_command_update_3.png)
+   
+5) Post-layout ngspice simulations.
+ 
+Commands for ngspice simulation
+```bash
+# Command to directly load spice file for simulation to ngspice
+ngspice sky130_inv.spice
+
+# Now that we have entered ngspice with the simulation spice file loaded we just have to load the plot
+plot y vs time a
+```
+
+Screenshots of ngspice run
+ ![Alt Text](ngspice.png)
+ ![Alt Text](plot y_vs_time.png)
