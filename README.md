@@ -33,6 +33,9 @@ prep -design picorv32a
 # Now that the design is prepped and ready, we can run synthesis using following command
 run_synthesis
 ```
+Screenshot of floorplan run
+![Alt Text](floorplan.png)
+
 ```bash
 # Now we can run floorplan
 run_floorplan
