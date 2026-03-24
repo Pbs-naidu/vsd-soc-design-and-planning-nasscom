@@ -20,5 +20,5 @@ It covers the complete RTL-to-GDSII flow through structured day-wise implementat
 # Day 1 → [View Work](README.md)
 # Day 2 → [View Work](README.md)
 # Day 3 → [View Work](README.md)
-git tag Day1-complete
-git push origin Day1-complete
+git tag Day-1-complete
+git push origin Day-1-complete
