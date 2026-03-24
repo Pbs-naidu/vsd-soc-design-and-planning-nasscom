@@ -136,3 +136,9 @@ gvim .magicrc
 magic -d XR &
 ```
 Screenshots of commands run
+
+ ![Alt Text](magic_drc_commd.png).
+![Alt Text](magic_XR_cmd.png)
+Screenshot of .magicrc file
+ ![Alt Text](magic_crc_file.png).
+![Alt Text](rise_and_fall_50_percent_rise_delay_waveform.png)
