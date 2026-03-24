@@ -1,334 +1,55 @@
-# 🧠 SoC Design & Planning using OpenLANE (3-Day Hands-on Documentation)
-
-This repository documents my hands-on learning from a **SoC Design and Planning workshop**, where I explored the ASIC physical design flow using **OpenLANE with Sky130 PDK**.
-Due to time constraints, I completed **3 days**, covering the most critical stages: **Synthesis, Floorplanning, Placement, and Standard Cell Design with Simulation & DRC**.
-
----
-
-## ⚙️ Tools & Technologies
-
-* OpenLANE Flow
-* Sky130 PDK
-* Magic VLSI Tool
-* NGSPICE
-* OpenROAD
-* Netgen
-* Docker
-
----
-
-# 📅 Day 1 – OpenLANE Setup & Synthesis
-
-## 🔹 Objective
-
-To initialize OpenLANE, prepare the design, and perform RTL synthesis.
-
----
-
-### 🧪 Step 1: Launching OpenLANE
-
-![OpenLANE](images/day1_openlane.png)
-
-📌 Observation:
-OpenLANE was launched in interactive mode, enabling access to the full ASIC design flow.
-
----
-
-### 🧪 Step 2: Preparing Design
-
-![Prep](images/day1_prep.png)
-
-📌 Observation:
-The `prep` command initialized the `picorv32a` design and loaded required PDK and library files.
-
----
-
-### 🧪 Step 3: Running Synthesis
-
-![Synthesis](images/day1_synthesis.png)
-
-📌 Observation:
-RTL was converted into a gate-level netlist using Sky130 standard cells.
-
----
-
-### 🧪 Step 4: Synthesis Completion
-
-![Success](images/day1_success.png)
-
-📌 Observation:
-Synthesis completed successfully with timing constraints applied.
-
----
-
-### 🧪 Step 5: Report Analysis
-
-![Reports](images/day1_reports.png)
-
-📌 Observation:
-Generated reports include timing, area, and power metrics.
-
----
-
-### 🧪 Step 6: Cell Statistics
-
-![Stats](images/day1_stats.png)
-
-📌 Observation:
-Cell usage shows significant sequential elements and buffers, indicating clock-driven logic.
-
----
-
-## 🔹 Key Takeaways
-
-* Understood RTL → Gate-level conversion
-* Learned OpenLANE flow initialization
-* Analyzed synthesis reports
-
----
-
-# 📅 Day 2 – Floorplanning & Placement
-
-## 🔹 Objective
-
-To perform floorplanning, generate PDN, and place standard cells.
-
----
-
-### 🧪 Step 1: Running Floorplan
-
-![Floorplan](images/day2_floorplan_run.png)
-
-📌 Observation:
-Defines chip layout, core area, and IO structure.
-
----
-
-### 🧪 Step 2: Power Distribution Network
-
-![PDN](images/day2_pdn.png)
-
-📌 Observation:
-PDN ensures reliable VDD and GND distribution across the chip.
-
----
-
-### 🧪 Step 3: Floorplan in Magic
-
-![Magic](images/day2_magic_cmd.png)
-
-📌 Observation:
-Layout visualization confirms proper structure and boundaries.
-
----
-
-### 🧪 Step 4: Layout Structure
-
-![Layout](images/day2_floorplan_layout.png)
-
-📌 Observation:
-Core region and standard cell rows are clearly defined.
-
----
-
-### 🧪 Step 5: Pin Distribution
-
-![Pins](images/day2_pins_before.png)
-![Pins](images/day2_pins_after.png)
-
-📌 Observation:
-Improved pin distribution reduces routing complexity.
-
----
-
-### 🧪 Step 6: Running Placement
-
-![Placement](images/day2_run_placement.png)
-
-📌 Observation:
-Cells are placed to optimize timing and wirelength.
-
----
-
-### 🧪 Step 7: Placement Result
-
-![Placement](images/day2_after_placement.png)
-
-📌 Observation:
-Efficient cell distribution achieved with good utilization.
-
----
-
-### 🧪 Step 8: Placement Visualization
-
-![Placement](images/day2_placement_layout.png)
-
-📌 Observation:
-Dense standard cell placement observed across core.
-
----
-
-## 🔹 Key Takeaways
-
-* Learned floorplanning fundamentals
-* Understood PDN importance
-* Observed placement optimization
-
----
-
-# 📅 Day 3 – Standard Cell Design, Simulation & DRC
-
-## 🔹 Objective
-
-To design, simulate, and verify a CMOS inverter using layout and circuit tools.
-
----
-
-## 🔹 Layout & Extraction
-
-### 🧪 Step 1: Inverter Layout
-
-![Layout](images/day3_layout.png)
-
-📌 Observation:
-CMOS inverter layout includes PMOS, NMOS, and proper routing.
-
----
-
-### 🧪 Step 2: Extraction
-
-![Extract](images/day3_extract.png)
-
-📌 Observation:
-Extracted netlist bridges layout to circuit simulation.
-
----
-
-### 🧪 Step 3: SPICE File
-
-![SPICE](images/day3_spice_raw.png)
-
-📌 Observation:
-SPICE file includes transistor parameters from layout.
-
----
-
-## 🔹 Simulation using NGSPICE
-
-### 🧪 Step 4: Running Simulation
-
-![NGSPICE](images/day3_ngspice.png)
-
-📌 Observation:
-Simulation initialized successfully.
-
----
-
-### 🧪 Step 5: Waveform Output
-
-![Waveform](images/day3_plot.png)
-
-📌 Observation:
-Output is inverted with respect to input, confirming correct functionality.
-
----
-
-## 🔹 Timing Analysis
-
-### 🧪 Step 6: 50% Delay
-
-![Delay](images/day3_delay_waveform.png)
-
-📌 Observation:
-Propagation delay measured at 50% threshold.
-
----
-
-### 🧪 Step 7: Rise/Fall Time
-
-![RiseFall](images/day3_rise_fall.png)
-
-📌 Observation:
-Transition times measured between 20%–80%.
-
----
-
-## 🔹 DRC Verification
-
-### 🧪 Step 8: Rule Reference
-
-![Rules](images/day3_rulebook.png)
-
-📌 Observation:
-Sky130 rules define layout constraints.
-
----
-
-### 🧪 Step 9: Poly Rule Check
-
-![Poly](images/day3_poly_cases.png)
-
-📌 Observation:
-Correct vs incorrect layouts analyzed using DRC.
-
----
-
-## 🔹 Advanced: Parasitic-Aware Simulation
-
-### 🧪 Step 10: Editing SPICE
-
-![Edit](images/day3_spice_edit.png)
-
-📌 Observation:
-Model libraries and simulation commands added.
-
----
-
-### 🧪 Step 11: Adding Capacitance
-
-![Cap](images/day3_spice_cap.png)
-
-📌 Observation:
-Load capacitance improves realistic waveform behavior.
-
----
-
-### 🧪 Step 12: Final SPICE
-
-![Final](images/day3_spice_final.png)
-
-📌 Observation:
-Final simulation includes parasitics and real conditions.
-
----
-
-## 🔹 Key Takeaways
-
-* Designed CMOS inverter layout
-* Performed extraction and SPICE simulation
-* Measured delay and transition times
-* Verified layout using DRC
-* Understood parasitic impact on performance
-
----
-
-# ⚠️ Progress Note
-
-This repository covers **3 days of the workshop**, focusing on core physical design concepts. Remaining stages will be explored further independently.
-
----
-
-# 🚀 Future Work
-
-* Routing and sign-off
-* DRC/LVS automation
-* Timing optimization
-* Custom cell design
-
----
-
-# 🙏 Acknowledgment
-
-Thanks to the workshop organizers for providing hands-on exposure to ASIC physical design using open-source tools.
-
----
+Section 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK (14/03/2024 - 15/03/2024)
+Theory
+Expand or Collapse
+Implementation
+Section 1 tasks:-
+
+Run 'picorv32a' design synthesis using OpenLANE flow and generate necessary outputs.
+Calculate the flop ratio.
+Flop Ratio = No.of D Flipflops/Total Number of Cells
+Percentage of DFF's = FlopRatio*100
+
+1. Run 'picorv32a' design synthesis using OpenLANE flow and generate necessary outputs.
+Commands to invoke the OpenLANE flow and perform synthesis
+
+```bash
+# Change directory to openlane flow directory
+cd Desktop/work/tools/openlane_working_dir/openlane
+
+# Start docker
+docker
+```
+```bash
+# alias docker='docker run -it -v $(pwd):/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -u $(id -u $USER):$(id -g $USER) efabless/openlane:v0.21'
+# Since we have aliased the long command to 'docker' we can invoke the OpenLANE flow docker sub-system by just running this command
+docker
+# Now that we have entered the OpenLANE flow contained docker sub-system we can invoke the OpenLANE flow in the Interactive mode using the following command
+./flow.tcl -interactive
+
+# Now that OpenLANE flow is open we have to input the required packages for proper functionality of the OpenLANE flow
+package require openlane 0.9
+
+# Now the OpenLANE flow is ready to run any design and initially we have to prep the design creating some necessary files and directories for running a specific design which in our case is 'picorv32a'
+prep -design picorv32a
+
+# Now that the design is prepped and ready, we can run synthesis using following command
+run_synthesis
+
+# Exit from OpenLANE flow
+exit
+
+# Exit from OpenLANE flow docker sub-system
+exit
+```
+
+'''
+![Alt Text](openlane_interactive.png)
+
+![Alt Text](Synthesis_succesful.png)
+![Alt Text](after_synthesis.png)
+
+   Flop Ratio = 1613/14876 = 0.10842968539
+ 
+   = 0.10842968539*100 = 10.842968539
+
+![Alt Text](in_report_dff_ratio.png)
