@@ -1,8 +1,8 @@
 # Digital VLSI SoC Design and Planning <br>
 This repository documents my hands-on learning of ASIC Physical Design using the OpenLANE flow.<br>
 It covers the complete RTL-to-GDSII flow through structured day-wise implementation.
+![main picture](https://github.com/user-attachments/assets/d5db9f8d-21fa-44cd-ab4e-d7706c8ca6bf)
 
-![Alt Text](openlane_interactive.png)
 ## Objectives:
 
  -Understand complete ASIC Design Flow <br>
