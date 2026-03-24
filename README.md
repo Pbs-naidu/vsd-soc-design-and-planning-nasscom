@@ -17,4 +17,8 @@ It covers the complete RTL-to-GDSII flow through structured day-wise implementat
 -Docker <br>
 -Magic VLSI <br>
 
-
+## Branches:
+->Main Branch <br>
+-> Day-1 <br>
+-> Day-2 <br>
+-> Day-3 
