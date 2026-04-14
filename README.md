@@ -133,9 +133,7 @@ exit
 
 # Exit from OpenLANE flow docker sub-system
 exit
-```
 
-'''
 ![Alt Text](openlane_interactive.png)
 
 ![Alt Text](Synthesis_succesful.png)
